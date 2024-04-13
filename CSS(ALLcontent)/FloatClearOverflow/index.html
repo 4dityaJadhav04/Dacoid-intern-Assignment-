@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        .box{
+            border: 2px solid black;
+            overflow: auto;
+
+        }
+        .item{
+            width: 200px;
+            height: 150px;
+            border: 2px solid red;
+            margin: 2px ;
+            text-align: center;
+            padding-top: 80px;
+            background-color: aquamarine;
+            float :left ;                         /* condition is known as Greate Collapse To avoid this ->                                            overflow concept is used  */
+        }
+        #item3{
+          float: right ;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item" id="item3">C</div>
+    </div>
+  </body>
+</html>

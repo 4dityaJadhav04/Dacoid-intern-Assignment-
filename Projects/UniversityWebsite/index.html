@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/4a4ed73222.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- -------header image section------- -->
+    <section class="header">
+      <nav class="navbar">
+        <div class="nav-logo">
+          <img class="university-logo" src="images/logo.png" alt="" />
+        </div>
+
+        <div class="nav-items" id="navlinks">
+          <img
+            onclick="hideMenu()"
+            class="cross solid"
+            src="images/cross.png"
+            alt=""
+          />
+
+          <a class="items" href="#Home">Home</a>
+          <a class="items" href="#About">About</a>
+          <a class="items" href="#Course">Course</a>
+          <a class="items" href="#Blog">Blog</a>
+          <a class="items" href="#Contact">Contact</a>
+        </div>
+        <img
+          class="bar solid"
+          onclick="showMenu()"
+          src="images/bars.png"
+          alt=""
+        />
+      </nav>
+      <div class="main-content">
+        <h1 class="main-heading">World's Biggest University</h1>
+        <p class="main-para">
+          Making website is now one of the easiest tging in the world. you just
+          need to learn HTML,CSS,javascript and you are good to go
+        </p>
+
+        <button class="main-button orange-btn">Visit Us To know More</button>
+      </div>
+    </section>
+
+    <!-- ----------javascript------------ -->
+    <script>
+      var navLinks = document.getElementById("navlinks");
+
+      function showMenu() {
+        navLinks.style.right = "0px";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-300px";
+      }
+    </script>
+
+    <!-- ---------course Section------- -->
+
+    <section class="courses-section">
+      <div class="course-content">
+        <div class="course-top">
+          <h2 class="course-heading">Courses We Offer</h2>
+
+          <p class="course-para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+            culpa!
+          </p>
+        </div>
+
+        <div class="course-bottom">
+          <!-- card - 1 -->
+          <div class="course-card">
+            <div class="card-title">Intermediate</div>
+            <div class="course-para">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia
+              repellat, excepturi quos eius asperiores praesentium dignissimos a
+              necessitatibus! Nulla rem cumque eligendi voluptas, eum eos!
+            </div>
+          </div>
+
+          <!-- card - 2 -->
+          <div class="course-card">
+            <div class="card-title">Degree</div>
+
+            <div class="course-para">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia
+              repellat, excepturi quos eius asperiores praesentium dignissimos a
+              necessitatibus! Nulla rem cumque eligendi voluptas, eum eos!
+            </div>
+          </div>
+
+          <!-- card - 3 -->
+          <div class="course-card">
+            <div class="card-title">Post Graduation</div>
+
+            <div class="course-para">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia
+              repellat, excepturi quos eius asperiores praesentium dignissimos a
+              necessitatibus! Nulla rem cumque eligendi voluptas, eum eos!
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- campus Section ----------- -->
+
+    <section class="campus-section">
+      <div class="campus-top">
+        <div class="campus-heading">
+          <h2>Our Global Campus</h2>
+        </div>
+        <div class="campus-para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </div>
+      </div>
+      <div class="campus-bottom">
+        <div class="campus-img-container">
+          <img class="campus-img" src="images/london.png" alt="" />
+          <div class="layer">
+            <h3 class="layer-title">LONDAN</h3>
+          </div>
+        </div>
+        <div class="campus-img-container">
+          <img class="campus-img" src="images/newyork.png" alt="" />
+          <div class="layer">
+            <h3 class="layer-title">NEWYORK</h3>
+          </div>
+        </div>
+        <div class="campus-img-container">
+          <img class="campus-img" src="images/washington.png" alt="" />
+          <div class="layer">
+            <h3 class="layer-title">WASHINGTON</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------Facilities----------- -->
+
+    <section class="facilities-section">
+      <div class="facilities-top">
+        <div class="facility-heading">
+          <h2>Our Facilities</h2>
+        </div>
+        <div class="facilities-description">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+
+      <div class="facilities-bottom">
+        <!-- card 1 -->
+        <div class="facility-card">
+          <div class="facility-img-container">
+            <img class="facility-img" src="images/library.png" alt="" />
+          </div>
+          <h3 class="facility-card-title">World class Library</h3>
+
+          <p class="facility-para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+            repellendus magni eveniet.
+          </p>
+        </div>
+
+        <!-- card 2 -->
+        <div class="facility-card">
+          <div class="facility-img-container">
+            <img class="facility-img" src="images/basketball.png" alt="" />
+          </div>
+          <h3 class="facility-card-title">Largest Play Ground</h3>
+
+          <p class="facility-para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+            repellendus magni eveniet.
+          </p>
+        </div>
+
+        <!-- card 3 -->
+        <div class="facility-card">
+          <div class="facility-img-container">
+            <img class="facility-img" src="images/cafeteria.png" alt="" />
+          </div>
+          <h3 class="facility-card-title">Tasty and Healthy Food</h3>
+
+          <p class="facility-para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+            repellendus magni eveniet.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------testimonial-section---------- -->
+
+    <section class="testimonial-section">
+      <div class="testimonial-top">
+        <h2>what Our Student Says</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+
+      <div class="testimonial-bottom">
+        <!-- card 1 -->
+        <div class="testimonial-card card1">
+          <div class="testomonial-img-container">
+            <img class="user-img" src="images/user1.jpg" alt="" />
+          </div>
+          <div class="user-description">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Praesentium hic dicta rem blanditiis. Distinctio, omnis saepe?
+              Perspiciatis fugiat illum atque!
+            </p>
+            <h3>Lana Miller</h3>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+        </div>
+
+        <!-- card 2 -->
+        <div class="testimonial-card card2">
+          <div class="testomonial-img-container">
+            <img class="user-img" src="images/user2.jpg" alt="" />
+          </div>
+          <div class="user-description">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Praesentium hic dicta rem blanditiis. Distinctio, omnis saepe?
+              Perspiciatis fugiat illum atque!
+            </p>
+            <h3>Mark Wood</h3>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------call to Action------------- -->
+    <section class="cta-section">
+      <h1>Enroll For Varoius Online Courses <br />Anywhere From The World</h1>
+
+      <a class="orange-btn" href="">Contact Us</a>
+    </section>
+
+    <!-- -----------------footer---------------------- -->
+
+    <section class="footer-section">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus a
+        nulla dignissimos quidem similique dolore omnis deserunt accusantium?
+        Deserunt odio, sit porro hic iste eos.
+      </p>
+
+      <div class="footer-icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <p class="para-icon">
+        Made with <i class="fa fa-heart-o"></i> by Adii ..
+      </p>
+    </section>
+  </body>
+</html>

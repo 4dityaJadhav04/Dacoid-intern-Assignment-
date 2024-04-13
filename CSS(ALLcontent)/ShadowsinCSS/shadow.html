@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        border: 3px solid black;
+        background-color: aliceblue;
+        height: 700px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+      }
+      .Box{
+        border: 2px solid grey ;
+        background-color: antiquewhite;
+        display: inline-block;
+        width: 500px;
+        height: 550px;
+        margin: 5px;
+        padding: 15px;
+
+        /* box-shadow: 10px 12px black; */
+        /* box-shadow: 20px 12px 40px black; */
+        /* box-shadow: 10px 12px 18px 30px black; */
+        /* multiple shadows : */
+        box-shadow: 15px 10px 30px black, 22px 12px 40px grey; 
+    
+      }
+      #topbox{
+        display: flex;
+        flex-direction: row;
+      }
+      img{
+        height: 100px;
+        width: 200px;
+        box-shadow: 4px 4px 30px black , 3px 3px 25px grey;
+        border-radius: 20px;
+      }
+      h1{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-top: 38px;
+        margin-left: 25px;
+
+        text-shadow: 8px -10px 40px brown;
+      }
+      #midbox{
+        border : 2px solid black;
+        margin-top: 40px;
+        margin-left: 30px;
+        padding-left: 10px;
+        box-shadow: 5px 5px 25px plum;
+      }
+      #bottombox{
+        display: flex;
+        margin-top: 30px;
+      }
+      #item {
+        --custom-margin:20px; /* using custom variable*/
+
+        border: 2px solid black;
+        height: 230px;
+        width: 200px;
+        margin: var(--custom-margin);
+        padding: 8px;
+
+        box-shadow: 4px 4px 30px coral;
+      }   
+      h2{
+        text-shadow: 2px 3px 2px grey;
+      }
+      p{
+        text-shadow: 1px 1px 2px grey;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="Box">
+        <div id="topbox">
+          <img src="logo2.jpg" alt="logo" />
+          <h1><u><i>MERCEDES BENZ</i></u></h1>
+        </div>
+        <div id="midbox">
+          <h2>...WELCOME TO MERCEDES BENZ ...</h2>
+        </div>
+        <div id="bottombox">
+          <div id="item">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae obcaecati commodi quam autem adipisci voluptatum dignissimos dicta quo veniam. Iure ducimus provident placeat assumenda quibusdam eaque error reprehenderit quaerat. Eaque officia nostrum expedita sint enim!</p>
+          </div>
+          <div id="item">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sapiente, minus, corporis quam soluta explicabo, nihil hic dolore possimus ab quidem consectetur voluptate veritatis? Vero dignissimos quas iusto placeat saepe velit voluptas eos sed, quidem, nostrum consectetur!</p>
+
+            </div>
+        </div>
+    </div>
+    </nav>
+
+  </body>
+</html>

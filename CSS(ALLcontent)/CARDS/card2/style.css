@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    border:50px solid black ;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);       display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.box{
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+    border: 3px solid black;
+    width: 300px;
+    height:530px;
+    border-radius: 10px;
+    box-shadow: 5px 6px 30px black;
+
+    gap: 25px;
+}
+.box img{
+    width: 297px;
+    height: 150px; 
+    border-top-left-radius:9px ; 
+    border-top-right-radius:9px ; 
+    box-shadow: 0px 2px 10px  #784BA0;
+}
+p{
+    margin-left: 20px;
+    font-family: cursive;
+}
+h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-variant: small-caps;
+    font-size: 1.7rem;
+    text-shadow: 4px 4px 10px rgb(207, 63, 87);
+}
+
+#content{
+    width: 250px;
+    height: 60px;
+    background-color: #FF3CAC;
+background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    border-radius: 8px;
+    box-shadow: 2px 2px 30px grey;
+
+    /* transition: all 1s linear 0s; */
+}
+/* #content:hover{
+    transform: scale(1.1);
+} */
+#leftcontent{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    margin-top: 5px;
+        
+}
+#rightcontent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#music{
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+
+    transition: all 1s linear 0s;
+}
+#music:hover{
+    transform: rotate(360deg) ;
+    
+}
+
+#rightcontent a{  
+    margin-left: 30px;
+    font-size: 1.1rem;
+    color: white;
+    transition: width 3s linear 0s;
+
+}
+#rightcontent:hover{
+    transform: scale(1.2);
+}
+span{
+    font-size: 0.9rem;
+    margin-left: 10px;
+    color: whitesmoke;
+}
+
+.button{
+    background-color: purple ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: 250px;
+    height: 50px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 30px black;
+
+    transition: all 1s linear 0s;
+}
+.button:hover{
+    transform: scale(1.1);
+}
+.button a{
+    color: white;
+    text-decoration: none;
+}
+
+.cancel a{
+    text-decoration: none;
+    /* margin-right: 15px ; */
+    font-size: 1.3rem;
+}
